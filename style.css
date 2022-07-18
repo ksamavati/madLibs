@@ -1,3 +1,8 @@
+html {
+    display: flex;
+    align-items: center;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,6 +11,7 @@ body {
     background-color: #191A22;
     color: #e3eeff;
     background-image: radial-gradient(#000033, #222222);
+    width: 100%;
 }
 
 h1 {
@@ -55,16 +61,24 @@ input {
     /* grid-template-columns: repeat(3, 400px); */
     /* display: flex; */
     grid-template-columns: 30vw 30vw 30vw;
-    margin-left: -12%;
+    margin-left: -5%;
     /* grid-auto-rows: 25px; */
     line-height: 45px;
 }
 
-
-/*
-@media (max-width: 800px) {
-    #output {
-        width: 90%;
+@media (max-width: 1250px) {
+    #gridContainer {
+        grid-template-columns: 45vw 45vw;
     }
 }
-*/
+
+@media (max-width: 850px) {
+    #gridContainer {
+        grid-template-columns: 85vw;
+        margin-right: 25vw;
+    }
+
+    #output {
+        width: 90vw;
+    }
+}

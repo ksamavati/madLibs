@@ -32,6 +32,4 @@ function createParagraph() {
 //     createParagraph();
 // }
 
-document.getElementById("submitButton").onclick = function () {
-    createParagraph();
-}
+// Moved onclick logic to form.onsubmit to check that required fields are being filled.

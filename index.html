@@ -14,34 +14,35 @@
 
 <body>
     <h1>Mad Libs</h1>
-    <!-- <form action="#"> -->
-    <div id="gridContainer">
-        <label>Adjective: <input type="text" name="lib1" id="lib1" value="lonely" required></label>
-        <label>Noun: <input type="text" name="lib2" id="lib2" value="house" required></label>
-        <label>Plural Noun: <input type="text" name="lib3" id="lib3" value="desks" required></label>
-        <label>Person (female): <input type="text" name="lib4" id="lib4" value="Susan" required></label>
-        <label>Adjective: <input type="text" name="lib5" id="lib5" value="orange" required></label>
-        <label>Article of clothing: <input type="text" name="lib6" id="lib6" value="jacket" required></label>
-        <label>Noun: <input type="text" name="lib7" id="lib7" value="tree" required></label>
-        <label>City: <input type="text" name="lib8" id="lib8" value="Detroit" required></label>
-        <label>Plural Noun: <input type="text" name="lib9" id="lib9" value="clouds" required></label>
-        <label>Adjective: <input type="text" name="lib10" id="lib10" value="tall" required></label>
-        <label>Part of the body: <input type="text" name="lib11" id="lib11" value="elbow" required></label>
-        <label>Letter of the alphabet: <input type="text" name="lib12" id="lib12" value="T" required></label>
-        <label>Celebrity: <input type="text" name="lib13" id="lib13" value="Mike Tyson" required></label>
-        <label>Plural Noun: <input type="text" name="lib14" id="lib14" value="books" required></label>
-        <label>Adjective: <input type="text" name="lib15" id="lib15" value="thin" required></label>
-        <label>Place: <input type="text" name="lib16" id="lib16" value="supermarket" required></label>
-        <label>Part of the body: <input type="text" name="lib17" id="lib17" value="nose" required></label>
-        <label>Adjective: <input type="text" name="lib18" id="lib18" value="large" required></label>
-        <label>Adjective: <input type="text" name="lib19" id="lib19" value="ridiculous" required></label>
-        <label>Verb: <input type="text" name="lib20" id="lib20" value="twist" required></label>
-        <label>Plural Noun: <input type="text" name="lib21" id="lib21" value="horses" required></label>
-        <label>Number: <input type="text" name="lib22" id="lib22" value="4" required></label>
-    </div><br><br>
-    <!-- <button type="submit" id="submitButton">Submit</button> -->
-    <button id="submitButton">Submit</button>
-    <!-- </form> -->
+    <form onsubmit="createParagraph(); return false;">
+        <!-- Need to use form.onsubmit instead of button.onclick if you want it to check required fields -->
+        <div id="gridContainer">
+            <label>Adjective: <input type="text" name="lib1" id="lib1" value="lonely" required></label>
+            <label>Noun: <input type="text" name="lib2" id="lib2" value="house" required></label>
+            <label>Plural Noun: <input type="text" name="lib3" id="lib3" value="desks" required></label>
+            <label>Person (female): <input type="text" name="lib4" id="lib4" value="Susan" required></label>
+            <label>Adjective: <input type="text" name="lib5" id="lib5" value="orange" required></label>
+            <label>Article of clothing: <input type="text" name="lib6" id="lib6" value="jacket" required></label>
+            <label>Noun: <input type="text" name="lib7" id="lib7" value="tree" required></label>
+            <label>City: <input type="text" name="lib8" id="lib8" value="Detroit" required></label>
+            <label>Plural Noun: <input type="text" name="lib9" id="lib9" value="clouds" required></label>
+            <label>Adjective: <input type="text" name="lib10" id="lib10" value="tall" required></label>
+            <label>Part of the body: <input type="text" name="lib11" id="lib11" value="elbow" required></label>
+            <label>Letter of the alphabet: <input type="text" name="lib12" id="lib12" value="T" required></label>
+            <label>Celebrity: <input type="text" name="lib13" id="lib13" value="Mike Tyson" required></label>
+            <label>Plural Noun: <input type="text" name="lib14" id="lib14" value="books" required></label>
+            <label>Adjective: <input type="text" name="lib15" id="lib15" value="thin" required></label>
+            <label>Place: <input type="text" name="lib16" id="lib16" value="supermarket" required></label>
+            <label>Part of the body: <input type="text" name="lib17" id="lib17" value="nose" required></label>
+            <label>Adjective: <input type="text" name="lib18" id="lib18" value="large" required></label>
+            <label>Adjective: <input type="text" name="lib19" id="lib19" value="ridiculous" required></label>
+            <label>Verb: <input type="text" name="lib20" id="lib20" value="twist" required></label>
+            <label>Plural Noun: <input type="text" name="lib21" id="lib21" value="horses" required></label>
+            <label>Number: <input type="text" name="lib22" id="lib22" value="4" required></label>
+        </div><br><br>
+        <!-- <button type="submit" id="submitButton">Submit</button> -->
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
     <br>
     <br>
     <p id="output">There are many _____ ways to choose a/an _____ to read. First, you could ask for recommendations from
