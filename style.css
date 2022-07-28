@@ -82,3 +82,9 @@ input {
         width: 90vw;
     }
 }
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 15.5vw;
+    }
+}
